@@ -347,7 +347,7 @@ public class CreacionGeneral {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void VampiroAtributos() {
+	public void InicializarVampiroAtributos() {
 		Random rand = new Random();
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Elige el tipo de personaje, fisico, social o mental: ");
@@ -817,6 +817,7 @@ public class CreacionGeneral {
 	        System.out.println("Dato invalido.");
 	}
 		
+		
 		sc.close();
 	}
 	
@@ -824,7 +825,7 @@ public class CreacionGeneral {
 	//To String
 	@Override
 	public String toString() {
-		return "\nATRIBUROS : \n"
+		return "\nATRIBUTOS: \n"
 				+ "\nFisicos: \n"
 				+ " fuerza=" + fuerza + ", destreza=" + destreza + ", resistencia=" + resistencia
 				+ "\n\nSociales: "
@@ -848,5 +849,17 @@ public class CreacionGeneral {
 				+ finanzas + ", informatica=" + informatica + "\n investigacion=" + investigacion + ", leyes=" + leyes
 				+ ", medicina=" + medicina + ", ocultismo=" + ocultismo + "\n politica=" + politica + ", tecnologia="
 				+ tecnologia+"\n\n";
+		
+	}
+	public void Virtudes () {
+		
+	}
+	
+	public void InicializarTrasfondosVirtudes() {
+		Virtudes vir = new Virtudes();
+		Trasfondos tras = new Trasfondos();
+		tras.trasfondoAleatorio();
+		tras.trasfondoEleccion();
+		vir.virtudesAleatorio();
 	}
 }

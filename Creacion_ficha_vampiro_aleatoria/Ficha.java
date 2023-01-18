@@ -8,13 +8,16 @@ public class Ficha {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		
 		Brujah brujah = new Brujah();
+		
 
-		brujah.VampiroAtributos();
+		brujah.InicializarVampiroAtributos();
 		brujah.brujahDisciplinas();
 		
+		
 		System.out.println(brujah);
+		
+		brujah.InicializarTrasfondosVirtudes();
 
 		sc.close();
 	}

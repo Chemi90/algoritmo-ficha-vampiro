@@ -13,7 +13,6 @@ public class Brujah extends CreacionGeneral {
 	}
 
 	public void setPresencia(int presencia) {
-		presencia = Math.max(3, 0);
 		this.presencia = presencia;
 	}
 
@@ -22,7 +21,6 @@ public class Brujah extends CreacionGeneral {
 	}
 
 	public void setPotencia(int potencia) {
-		potencia = Math.max(3, 0);
 		this.potencia = potencia;
 	}
 
@@ -31,7 +29,6 @@ public class Brujah extends CreacionGeneral {
 	}
 
 	public void setCeleridad(int celeridad) {
-		celeridad = Math.max(3, 0);
 		this.celeridad = celeridad;
 	}
 
@@ -99,6 +96,7 @@ public class Brujah extends CreacionGeneral {
 				break;
 			}
 		}
+
 	}
 
 	@Override
