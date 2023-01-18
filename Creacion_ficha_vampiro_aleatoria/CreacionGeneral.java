@@ -851,9 +851,6 @@ public class CreacionGeneral {
 				+ tecnologia+"\n\n";
 		
 	}
-	public void Virtudes () {
-		
-	}
 	
 	public void InicializarTrasfondosVirtudes() {
 		Virtudes vir = new Virtudes();
